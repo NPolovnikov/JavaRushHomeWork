@@ -21,7 +21,7 @@ public class Solution
         int n = Integer.parseInt(reader.readLine());
         int m = Integer.parseInt(reader.readLine());
 
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
 
         for(int i=0;i<n;i++)
             list.add(reader.readLine());

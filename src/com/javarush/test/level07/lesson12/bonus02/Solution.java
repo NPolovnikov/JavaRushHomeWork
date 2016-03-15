@@ -33,18 +33,17 @@ public class Solution
         }
 
         ArrayList<String> listUpperCase = new ArrayList<String>();
-        for (int i = 0; i < list.size(); i++)
+        for (String s : list)
         {
-            String s = list.get(i);
-            if (s.length()%2 == 0)
+            if (s.length() % 2 == 0)
                 s = s + " " + s;
-            else s= s + " " + s + " " + s;
+            else s = s + " " + s + " " + s;
             listUpperCase.add(s);
         }
 
-        for (int i = 0; i < listUpperCase.size(); i++)
+        for (String aListUpperCase : listUpperCase)
         {
-            System.out.println(listUpperCase.get(i));
+            System.out.println(aListUpperCase);
         }
     }
 }

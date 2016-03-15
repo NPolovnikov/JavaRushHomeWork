@@ -44,22 +44,22 @@ public class Solution
         for (int i =0; i<list.size();)
         {
 
-            if ((list.get(i).contains("р")==true) && (list.get(i).contains("л")==false))
+            if ((list.get(i).contains("р")) && (!list.get(i).contains("л")))
             {
                 list.remove(i);
             }
 
-            else{ if ((list.get(i).contains("р")==false) && (list.get(i).contains("л")==true))
+            else{ if ((!list.get(i).contains("р")) && (list.get(i).contains("л")))
             {
                 list.add(i+1,list.get(i));
                 i+=2;
             }
-            else{ if ((list.get(i).contains("р")==true) && (list.get(i).contains("л")==true))
+            else{ if ((list.get(i).contains("р")) && (list.get(i).contains("л")))
             {
                 i++;
             }
             else {
-                if ((list.get(i).contains("р") == false) && (list.get(i).contains("л") == false)) {
+                if ((!list.get(i).contains("р")) && (!list.get(i).contains("л"))) {
                     i++;
                 }
             }}}

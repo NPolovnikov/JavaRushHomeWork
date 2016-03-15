@@ -13,7 +13,7 @@ Cat name is Murka, age is 8, weight is 7, tail = 20
 
 public class Solution
 {
-    public final static ArrayList<Cat> CATS = new ArrayList<Cat>();
+    public final static ArrayList<Cat> CATS = new ArrayList<>();
 
     public static void main(String[] args) throws IOException
     {
@@ -37,9 +37,9 @@ public class Solution
     }
 
     public static void printList() {
-        for (int i = 0; i < CATS.size(); i++)
+        for (Cat CAT : CATS)
         {
-            System.out.println(CATS.get(i));
+            System.out.println(CAT);
         }
     }
 

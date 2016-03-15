@@ -19,9 +19,9 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
 
-        for(int i=0;i!=1;)
+        while (true)
         {
             list.add(reader.readLine());
             if (list.get(list.size()-1).equals("end"))
@@ -29,8 +29,7 @@ public class Solution
         }
         list.remove(list.size()-1);
 
-        for(int i=0;i<list.size();i++)
-            System.out.println(list.get(i));
+        for (String aList : list) System.out.println(aList);
 
         //Напишите тут ваш код
     }

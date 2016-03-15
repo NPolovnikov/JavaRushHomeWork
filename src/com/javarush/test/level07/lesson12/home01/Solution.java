@@ -16,7 +16,7 @@ public class Solution
 {
     public static void main(String[] args) throws IOException
     {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for(int i=0;i<10;i++)
             list.add(Integer.parseInt(reader.readLine()));

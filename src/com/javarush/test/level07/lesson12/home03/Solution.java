@@ -20,7 +20,7 @@ public class Solution
         int  maximum;
         int  minimum;
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(Integer.parseInt(reader.readLine()));
         maximum = list.get(0);
         minimum = list.get(0);
